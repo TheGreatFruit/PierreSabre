@@ -16,6 +16,12 @@ public class Yakuza extends Humain {
 	public String getClan() {
 		return clan;
 	}
+	
+	@Override
+	public void direBonjour() {
+		super.direBonjour();
+		parler("Mon clan est celui de " + clan + ".");
+	}
 
 	public void extorquer(Commercant victime) {
 		int argentext;
